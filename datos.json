@@ -1,20 +1,18 @@
 {
-  "pagoActual": 6,
-  "fechaPago": "15 de octubre ",
-  "montoPagar": 2693.75,
-  "saldoActual": 75425,
+  "pagoActual": 7,
+  "fechaPago": "19 de octubre ",
+  "montoPagar": 2600,
+  "saldoActual": 72825,
   "fechasPagos": {
     "1": "30 de Julio",
     "3": "31 de Agosto",
     "4": "17 de Septiembre",
-    "5": "09 de Octubre"
+    "5": "09 de Octubre",
+    "6": "19 de octubre"
   },
   "pagosFaltantes": [
-    2,
-    6
+    2
   ],
-  "pagoAtrasado":true,
-  "pagoAtrasadoNum": "2, 6",
   "pagoIncompleto": true,
-  "montoFaltante": 250
+  "montoFaltante": 343
 }
