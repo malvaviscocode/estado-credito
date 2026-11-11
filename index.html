@@ -294,8 +294,10 @@
         document.getElementById('displayMontoQuincenal').innerText = montoFormateado;
         document.getElementById('displayMontoTarjeta').innerText = montoFormateado;
 
+        // Manejo del banner superior suave
         if (data.pagoAtrasado) {
-          const detalleAtraso = data.pagoAtrasadoNum || `Pago ${data.pagoActual}`;
+          // Forzar a que tome el texto especificado en el JSON (ej. "Pago 2")
+          const detalleAtraso = data.pagoAtrasadoNum || `Pago ${data.pagosFaltantes ? data.pagosFaltantes[0] : data.pagoActual}`;
           const textoFinal = detalleAtraso.toString().toLowerCase().startsWith('pago') 
             ? detalleAtraso 
             : `Pago ${detalleAtraso}`;
@@ -307,7 +309,7 @@
           document.getElementById('bannerAtrasado').style.display = 'none';
           document.getElementById('displayAviso').innerText = 'Recuerda realizar tu pago quincenal puntualmente.';
         }
-
+        
         const faltantes = data.pagosFaltantes || [];
         const fechasHistorial = data.fechasPagos || {};
 
