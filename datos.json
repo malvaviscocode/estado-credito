@@ -10,5 +10,5 @@
   "pagoAtrasado": false,
   "pagoAtrasadoNum": "",
   "pagoIncompleto": false,
-  "montoFaltante": false,
+  "montoFaltante": 0
 }
